@@ -1,0 +1,3 @@
+isme first of all signup and login sahi karna hai 
+then individual tasks delete karna hai , sara ek sath
+ delete karne wla logic likhr hai

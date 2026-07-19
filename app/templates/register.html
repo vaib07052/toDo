@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}
+Register
+{% endblock %}
+
+{% block content %}
+
+<div class="auth-wrapper">
+
+    <div class="login-box">
+
+        <div class="form-icon">
+            👤
+        </div>
+
+        <h2>Create Account</h2>
+
+        <p>
+            Create your account and start organizing your daily tasks.
+        </p>
+
+        <form method="POST">
+
+            <div class="form-group">
+
+                <label for="username">Username</label>
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Choose a username"
+                    required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create a password"
+                    required>
+
+            </div>
+
+            <button type="submit" class="btn">
+                Create Account
+            </button>
+
+        </form>
+
+        <div class="divider">
+            <span>OR</span>
+        </div>
+
+        <div class="auth-footer">
+
+            Already have an account?
+
+            <br><br>
+
+            <a class="link-btn" href="{{ url_for('auth.login') }}">
+                Login
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
